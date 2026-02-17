@@ -12,7 +12,7 @@ aesthetic and seamless tiling integration.
 -------------------------------------------------------------------------------
 To run Reno, your system MUST meet the following conditions:
 
-- OS: Linux (Tested on Hyprland/Wayland)
+- OS: Linux (Tested on Arch Linux Hyprland/Wayland)
 - Python: version 3.10 or higher
 - Libraries: PyQt6 (pip install PyQt6)
 - Fonts: JetBrainsMono Nerd Font (Required for UI icons/text)
@@ -74,5 +74,5 @@ The updates it'll be automatic, just use the update command in your terminal
 "sudo pacman -Syu --noconfirm" to recept it easily.
 And most of that, It still free, FOREVER!!!!
 ===============================================================================
-Developed by BakurPapashvili34 for the Linux Community.
+Developed by BakurPapashvili34 in 2026 for the Linux Community.
 ===============================================================================
