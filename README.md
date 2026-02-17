@@ -1,10 +1,10 @@
-# RENO
+# RHINO
 
-RENO (suggest of Rapid Explorer & Native Object) is a high-performance file manager built on Python, neon-infused file manager designed for users who demand a Cyberpunk aesthetic and seamless tiling integration.
+RHINO (suggest of Rapid Explorer & Native Object) is a high-performance file manager built on Python, neon-infused file manager designed for users who demand a Cyberpunk aesthetic and seamless tiling integration.
 
 1. PREREQUISITES & SYSTEM CONDITIONS
 
-To run Reno, your system MUST meet the following conditions:
+To run RHINO, your system MUST meet the following conditions:
 
 - OS: Linux (Tested on Arch Linux Hyprland/Wayland)
 - Python: version 3.10 or higher
@@ -16,7 +16,7 @@ To run Reno, your system MUST meet the following conditions:
 
 2. INSTALLATION TUTORIAL
 
-Follow these steps to set up Reno on your system:
+Follow these steps to set up RHINO on your system:
 
 STEP 1: Install Python dependencies
         $ pip install PyQt6
@@ -35,12 +35,12 @@ STEP 3: Configure Hyprland
             rounding = 0
         }
 
-STEP 4: Add the path ~/.config/reno/scripts/ and create "reno.py" by nvim or nano
+STEP 4: Add the path ~/.config/rhino/scripts/ and create "rhino.py" by nvim or nano
 
-STEP 5: Copy & Paste the script of reno.py in your ~/.config/reno/scripts/
+STEP 5: Copy & Paste the script of rhino.py in your ~/.config/rhino/scripts/
 
-STEP 6: Run Reno
-        $ python3 ~/.config/reno/scripts/reno.py
+STEP 6: Run RHINO
+        $ python3 ~/.config/rhino/scripts/rhino.py
 
 
 3. USER GUIDE (HOW TO USE)
