@@ -230,7 +230,6 @@ class RhinoExplorer(QMainWindow):
         self.details_pane.setText(f"     {file_info.fileName()}   |       Size: {file_info.size() / 1024:.1f} KB")
 
     def update_view(self, path, update_history=True):
-        # Always expand ~ just in case
         path = os.path.abspath(os.path.expanduser(path))
 
         if os.path.isdir(path):
@@ -279,7 +278,6 @@ class RhinoExplorer(QMainWindow):
             self.details_pane.setText(f"     Path not found: {raw_path}")
 
     def update_mask(self):
-        # This creates a physical "cut" in the window shape
         path = QPainterPath()
         path.addRoundedRect(self.rect().toRectF(), 24, 24)
         region = QRegion(path.toFillPolygon().toPolygon())
@@ -301,7 +299,6 @@ class RhinoExplorer(QMainWindow):
         source_index = self.proxy_model.mapToSource(index)
         file_info = self.model.fileInfo(source_index)
         
-        # Gather Data
         name = file_info.fileName()
         path = file_info.absoluteFilePath()
         size = f"{file_info.size() / 1024:.2f} KB" if not file_info.isDir() else "Folder"
@@ -309,7 +306,6 @@ class RhinoExplorer(QMainWindow):
         modified = file_info.lastModified().toString("yyyy-MM-dd HH:mm")
         owner = file_info.owner()
         
-        # Build the message
         details = (
             f"<b>Name:</b> {name}<br>"
             f"<b>Path:</b> {path}<br><br>"
@@ -324,7 +320,6 @@ class RhinoExplorer(QMainWindow):
         msg.setTextFormat(Qt.TextFormat.RichText)
         msg.setText(details)
         
-        # Neon Styling for the Properties Window
         msg.setStyleSheet("""
             QMessageBox {
                 background-color: #0D0221;
@@ -363,7 +358,6 @@ class RhinoExplorer(QMainWindow):
     def show_context_menu(self, position):
         menu = QMenu(self)
         
-        # Style the menu specifically for the Neon look
         menu.setStyleSheet("""
             QMenu {
                 background-color: rgba(13, 2, 33, 240);
