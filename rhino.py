@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
 from PyQt6.QtGui import QFileSystemModel, QColor, QPainter, QBrush, QIcon, QAction, QRegion
 from PyQt6.QtCore import Qt, QSortFilterProxyModel, QSize, QDir
 
-class RenoIconProvider(QFileIconProvider):
+class RhinoIconProvider(QFileIconProvider):
     def icon(self, info):
         if info.isDir():
             icon = QIcon.fromTheme("folder-yellow")
@@ -33,10 +33,10 @@ class RenoIconProvider(QFileIconProvider):
         icon = QIcon.fromTheme(icon_name)
         return icon if not icon.isNull() else QIcon.fromTheme("text-x-generic")
 
-class RenoExplorer(QMainWindow):
+class RhinoExplorer(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("RENO")
+        self.setWindowTitle("RHINO")
         self.resize(1200, 750)
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
